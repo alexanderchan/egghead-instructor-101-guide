@@ -9,13 +9,17 @@
   "scripts": {
     "dev": "gitbook serve",
     "build": "gitbook build",
-    "verify": "yarn build"
+    "verify": "yarn build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "express": "^4.13.4",
     "gitbook-cli": "^2.3.0",
     "gitbook-plugin-advanced-emoji": "^0.2.1",
     "gitbook-plugin-hints": "^1.0.1",
-    "gitbook-plugin-prism": "^1.0.0"
-  }
+    "gitbook-plugin-prism": "^1.0.0",
+    "snyk": "^1.104.1"
+  },
+  "snyk": true
 }
